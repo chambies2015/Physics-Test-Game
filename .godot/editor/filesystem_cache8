@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1698120743
+crate.tscn::PackedScene::6222991826289572204::1698114719::0::1::::<><>::uid://br6bqdehs0fda::::res://Sprites/Crate.png
+icon.svg::CompressedTexture2D::321812472677626782::1698114037::1698114041::1::::<><>::
+Physics.tscn::PackedScene::8983768589068515725::1698114804::0::1::::<><>::res://PhysicsPlayer.gd<>uid://d1ndfhay6fwfb::::res://Sprites/PhysicsCharacter.png<>uid://cuwp1byjjt4ya::::res://crate.tscn
+PhysicsPlayer.gd::GDScript::-1::1698114424::0::1::::<>RigidBody2D<>::
+::res://Sprites/::1698114126
+Crate.png::CompressedTexture2D::3643716189703108034::1621765450::1698114126::1::::<><>::
+PhysicsCharacter.png::CompressedTexture2D::9011200345214295835::1625367138::1698114126::1::::<><>::

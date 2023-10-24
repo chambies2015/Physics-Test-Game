@@ -1,0 +1,303 @@
+[gd_scene load_steps=5 format=3 uid="uid://d082mdw25hg1j"]
+
+[ext_resource type="Script" path="res://PhysicsPlayer.gd" id="1_0byja"]
+[ext_resource type="Texture2D" uid="uid://d1ndfhay6fwfb" path="res://Sprites/PhysicsCharacter.png" id="1_057qi"]
+[ext_resource type="PackedScene" uid="uid://cuwp1byjjt4ya" path="res://crate.tscn" id="3_l1246"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etg6l"]
+size = Vector2(18, 18)
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" type="RigidBody2D" parent="."]
+mass = 5.0
+gravity_scale = 0.0
+linear_damp = 1.0
+script = ExtResource("1_0byja")
+
+[node name="Sprite" type="Sprite2D" parent="Player"]
+texture = ExtResource("1_057qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_etg6l")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="Crate" parent="." instance=ExtResource("3_l1246")]
+
+[node name="Crate2" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(53, 48)
+
+[node name="Crate3" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-27, 52)
+
+[node name="Crate4" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-87, 51)
+
+[node name="Crate5" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-183, 84)
+
+[node name="Crate6" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-173, 17)
+
+[node name="Crate7" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-160, 42)
+
+[node name="Crate8" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-122, -13)
+
+[node name="Crate9" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-188, -82)
+
+[node name="Crate10" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-239, -8)
+rotation = 0.406838
+
+[node name="Crate11" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-110, -91)
+rotation = 0.406838
+
+[node name="Crate12" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(85, -44)
+rotation = 1.50867
+
+[node name="Crate13" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-31, 16)
+rotation = 1.50867
+
+[node name="Crate45" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-85, -36)
+rotation = 1.50867
+
+[node name="Crate46" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-40, -42)
+rotation = 1.50867
+
+[node name="Crate47" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-92, -70)
+rotation = 1.50867
+
+[node name="Crate48" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-153, -61)
+rotation = 3.7596
+
+[node name="Crate49" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-177, -21)
+rotation = 3.7596
+
+[node name="Crate50" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-142, 9)
+rotation = 3.7596
+
+[node name="Crate51" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-120, 52)
+rotation = 4.6481
+
+[node name="Crate52" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-59, -2)
+rotation = 4.6481
+
+[node name="Crate53" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-12, -46)
+rotation = 3.24518
+
+[node name="Crate54" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-35, -91)
+rotation = 3.24518
+
+[node name="Crate55" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-84, -127)
+rotation = 3.24518
+
+[node name="Crate56" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-158, -127)
+rotation = 3.24518
+
+[node name="Crate57" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-245, -90)
+rotation = 3.24518
+
+[node name="Crate58" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-264, 67)
+rotation = 3.24518
+
+[node name="Crate59" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-242, 105)
+rotation = 3.24518
+
+[node name="Crate60" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-170, 123)
+rotation = 6.10521
+
+[node name="Crate61" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-108, 132)
+rotation = 6.10521
+
+[node name="Crate62" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-85, 92)
+rotation = 6.10521
+
+[node name="Crate63" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-46, 133)
+rotation = 6.10521
+
+[node name="Crate64" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(20, 127)
+rotation = 6.10521
+
+[node name="Crate65" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(79, 133)
+rotation = 6.10521
+
+[node name="Crate66" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(98, 69)
+rotation = 6.10521
+
+[node name="Crate67" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(109, 17)
+rotation = 6.10521
+
+[node name="Crate68" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(161, -1.90735e-06)
+rotation = 6.10521
+
+[node name="Crate69" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(228, -34)
+rotation = 6.10521
+
+[node name="Crate70" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(198, -93)
+rotation = 6.10521
+
+[node name="Crate71" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(126, -77)
+rotation = 6.10521
+
+[node name="Crate72" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(191, -138)
+rotation = 6.10521
+
+[node name="Crate14" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(167, 102)
+rotation = 1.50867
+
+[node name="Crate15" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(225, 25)
+rotation = 1.50867
+
+[node name="Crate16" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(70, 105)
+rotation = -0.567004
+
+[node name="Crate17" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(142, 34)
+rotation = -0.567004
+
+[node name="Crate18" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(174, -43)
+rotation = -0.567004
+
+[node name="Crate19" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(150, -103)
+rotation = -0.567004
+
+[node name="Crate20" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(233, -117)
+rotation = -0.567004
+
+[node name="Crate21" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(92, -115)
+rotation = -0.567004
+
+[node name="Crate22" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-35, -133)
+rotation = -0.567004
+
+[node name="Crate23" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(28, -105)
+rotation = -0.567004
+
+[node name="Crate24" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-59, -66)
+rotation = -0.567004
+
+[node name="Crate25" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(25, -56)
+rotation = -0.567004
+
+[node name="Crate26" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-55, -108)
+rotation = -0.567004
+
+[node name="Crate27" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(0, -85)
+rotation = -0.567004
+
+[node name="Crate28" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-124, -139)
+rotation = -0.567004
+
+[node name="Crate29" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-213, -131)
+rotation = -0.567004
+
+[node name="Crate30" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-259, -128)
+rotation = -0.567004
+
+[node name="Crate31" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-221, -75)
+rotation = -0.567004
+
+[node name="Crate32" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-213, -34)
+rotation = -0.567004
+
+[node name="Crate33" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-126, -39)
+rotation = -0.567004
+
+[node name="Crate34" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-142, -97)
+rotation = -0.567004
+
+[node name="Crate35" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-220, 43)
+rotation = -0.567004
+
+[node name="Crate36" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-130, 89)
+rotation = -0.567004
+
+[node name="Crate37" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-101, 26)
+rotation = -0.567004
+
+[node name="Crate38" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(-35, 99)
+rotation = -0.567004
+
+[node name="Crate39" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(63, 84)
+rotation = -0.567004
+
+[node name="Crate40" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(135, 76)
+rotation = -0.567004
+
+[node name="Crate41" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(197, 75)
+rotation = -0.567004
+
+[node name="Crate42" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(249, 85)
+rotation = -0.567004
+
+[node name="Crate43" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(238, 121)
+rotation = -0.567004
+
+[node name="Crate44" parent="." instance=ExtResource("3_l1246")]
+position = Vector2(129, 121)
+rotation = -0.567004
